@@ -22,8 +22,7 @@ def get_forex_signal(pair):
 
 # Telegram command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Welcome to Forex Signal Bot!
-Send a currency pair like EURUSD to get signals.")
+    await update.message.reply_text("Welcome to Forex Signal Bot! Send a currency pair like EURUSD to get signals.")
 
 async def get_signal(update: Update, context: ContextTypes.DEFAULT_TYPE):
     pair = update.message.text.strip().upper()

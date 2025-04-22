@@ -15,7 +15,8 @@ def get_forex_signal(pair):
     try:
         rate = float(response["Realtime Currency Exchange Rate"]["5. Exchange Rate"])
         signal = "BUY" if rate > 1 else "SELL"  # Simplified logic for now
-        return f"📊 *{pair}*
+      return f"📊 *{pair}*\n💱 Rate: {rate}\n📈 Signal: *{signal}*"
+
 💱 Rate: {rate}
 📈 Signal: *{signal}*"
     except:

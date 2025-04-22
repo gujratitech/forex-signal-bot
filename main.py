@@ -38,5 +38,5 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", start))
     app.add_handler(CommandHandler("signal", get_signal))
-    app.add_handler(CommandHandler("", get_signal))
+    app.add_handler(CommandHandler("signal", get_signal))
     app.run_polling()
